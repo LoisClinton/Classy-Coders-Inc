@@ -1,4 +1,4 @@
-const Employees = require("./Employees");
+const { Employees } = require("./Employees");
 
 class SoftwareEngineer extends Employees {
   #programmingLanguages;
@@ -9,7 +9,7 @@ class SoftwareEngineer extends Employees {
   getProgrammingLanguages() {
     return this.#programmingLanguages;
   }
-  setProgrammingLanguage(language) {
+  setProgrammingLanguages(language) {
     this.#programmingLanguages.push(language);
   }
 }
